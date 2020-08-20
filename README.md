@@ -1,2 +1,2 @@
 # Gittins-Index
-Code for the MPhil Project
+Example code for the MPhil Project
