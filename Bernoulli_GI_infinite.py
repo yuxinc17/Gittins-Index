@@ -177,7 +177,12 @@ for alpha in tqdm(range(1, horizon + 1)):
         
 
 
-
+gittins_steps32_runs1000000 = MultiArmedBandits(gittins = gi_32_bernoulli, num_steps = 32, num_runs = 1000000).simulate()
+thompson_steps32_runs1000000 = MultiArmedBandits(thompson = True, num_steps = 32, num_runs = 1000000).simulate()
+print("Gittins Index mean: " + str(np.mean(gittins_steps32_runs1000000[2])))
+print("Gittins Index std: " + str(np.std(gittins_steps32_runs1000000[2])/np.sqrt(1000000)))
+print("Thompson Sampling mean: " + str(np.mean(thompson_steps32_runs1000000[2])))
+print("Thompson Sampling std: " + str(np.std(thompson_steps32_runs1000000[2])/np.sqrt(1000000)))
 
 
 
