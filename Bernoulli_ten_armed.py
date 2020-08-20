@@ -149,7 +149,7 @@ plt.xlabel("Steps", fontsize = 16)
 plt.ylabel("Average reward over 2000 repetitions", fontsize = 16)
 plt.title(r"Gaussian bandits: instantaneous reward at each step ($k$ = 10)", fontsize = 20)
 plt.legend()
-fig.savefig('/Users/yuxin/Desktop/Gaussian_reward_k10.pdf', bbox_inches='tight')
+fig.savefig('/Users/yuxin/Desktop/Bernoulli_reward_k10.pdf', bbox_inches='tight')
 
 
 
@@ -165,7 +165,7 @@ plt.xlabel("Steps", fontsize = 16)
 plt.ylabel("\% Optimal Action over 2000 repetitions", fontsize = 16)
 plt.title(r"Gaussian bandits: percentage of optimal action at each step ($k$ = 10)", fontsize = 20)
 plt.legend()
-fig.savefig('/Users/yuxin/Desktop/action_new.pdf', bbox_inches='tight')
+fig.savefig('/Users/yuxin/Desktop/Bernoulli_action_k10.pdf', bbox_inches='tight')
 
 
 
@@ -255,7 +255,7 @@ plt.xlabel("Steps", fontsize = 16)
 plt.ylabel("Average reward over 2000 repetitions", fontsize = 16)
 plt.title(r"Gaussian bandits: instantaneous reward at each step ($k$ = 100)", fontsize = 20)
 plt.legend()
-fig.savefig('/Users/yuxin/Desktop/reward_k100.pdf', bbox_inches='tight')
+fig.savefig('/Users/yuxin/Desktop/Bernoulli_reward_k100.pdf', bbox_inches='tight')
 
 
 
@@ -271,7 +271,7 @@ plt.xlabel("Steps", fontsize = 16)
 plt.ylabel("\% Optimal Action over 2000 repetitions", fontsize = 16)
 plt.title(r"Gaussian bandits: percentage of optimal action at each step ($k$ = 100)", fontsize = 20)
 plt.legend()
-fig.savefig('/Users/yuxin/Desktop/action_k100.pdf', bbox_inches='tight')
+fig.savefig('/Users/yuxin/Desktop/Bernoulli_action_k100.pdf', bbox_inches='tight')
 
 
 
@@ -328,4 +328,4 @@ plt.title(r"Gaussian bandits: parameter study ($k$ = 100)", fontsize = 20)
 plt.hlines(y = max_k100, xmin = pow(2,-7), xmax = pow(2,3), colors = 'k',linestyle = 'dashed')
 plt.hlines(y = ts_mean, xmin = pow(2,-7), xmax = pow(2,3), colors = 'b',linestyle = 'dashed', label = 'Thompson sampling')
 plt.legend()
-fig.savefig('/Users/yuxin/Desktop/param_study_k100.pdf', bbox_inches='tight')
+fig.savefig('/Users/yuxin/Desktop/Bernoulli_param_study_k100.pdf', bbox_inches='tight')
